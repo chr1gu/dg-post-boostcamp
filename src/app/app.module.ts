@@ -2,12 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { WelcomePageComponent } from './welcome-page/welcome-page.component';
-import { ProductPageComponent } from './product-page/product-page.component';
-import { NavLeftComponent } from './nav-left/nav-left.component';
-import { NavRightComponent } from './nav-right/nav-right.component';
-import { NotfoundPageComponent } from './notfound-page/notfound-page.component';
+import { AppComponent } from './components/app.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
+import { ProductPageComponent } from './components/product-page/product-page.component';
+import { NavLeftComponent } from './components/nav-left/nav-left.component';
+import { NavRightComponent } from './components/nav-right/nav-right.component';
+import { NotfoundPageComponent } from './components/notfound-page/notfound-page.component';
 
 @NgModule({
   declarations: [

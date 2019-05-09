@@ -1,8 +1,8 @@
 <aside class="pageSidebar--262RE">
-  <div id="sidebarMenu">
+  <div id="sidebarMenu" *ngIf="navigation$ | async as navigationState">
     <div id="usermenu-area" class="userMenu--2BM2k inverted--1k-X-">
       <div class="closeButton--3acoZ inverted--2S_aE close">
-        <button type="button" class="button--283Si big--2EVgB">
+        <button type="button" class="button--283Si big--2EVgB" (click)="closeNavigation()">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
                class="digicon--e1_A0">
             <path d="M12.243 3.054l.707.707-9.193 9.192-.707-.707z"></path>
@@ -10,7 +10,7 @@
           </svg>
         </button>
       </div>
-      <div class="userMenuContent--1r8zG"><h2 class="userTitle--2MTy9"><strong>Hallo&nbsp;<span>Christoph</span></strong>
+      <div class="userMenuContent--1r8zG"><h2 class="userTitle--2MTy9"><strong>Hallo&nbsp;<span>Marc</span></strong>
       </h2><a href="https://www.galaxus.ch/de/user/chrigu-1032955" class="link--2eRQr inverted--k6nda">Zum
         öffentlichen Profil</a>
         <div class="content--2ixi4">
