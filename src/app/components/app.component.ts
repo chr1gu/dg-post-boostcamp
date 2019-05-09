@@ -11,15 +11,27 @@ export class AppComponent {
   constructor(private navigationService: NavigationService) {
   }
 
-  showComparisonList() {
-    this.navigationService.change(NavigationState.ComparisonList);
+  toggleComparisonList() {
+    this.navigationService.change(this.navigationService.current() === NavigationState.ComparisonList
+      ? NavigationState.Closed
+      : NavigationState.ComparisonList);
   }
 
-  showWatchList() {
-    this.navigationService.change(NavigationState.WatchList);
+  toggleWishList() {
+    this.navigationService.change(this.navigationService.current() === NavigationState.WishList
+      ? NavigationState.Closed
+      : NavigationState.WishList);
   }
 
-    showBasket() {
-    this.navigationService.change(NavigationState.Basket);
+  toggleUserNavigation() {
+    this.navigationService.change(this.navigationService.current() === NavigationState.UserNavigation
+      ? NavigationState.Closed
+      : NavigationState.UserNavigation);
+  }
+
+  toggleBasket() {
+    this.navigationService.change(this.navigationService.current() === NavigationState.Basket
+      ? NavigationState.Closed
+      : NavigationState.Basket);
   }
 }

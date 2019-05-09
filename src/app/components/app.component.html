@@ -155,18 +155,18 @@
       </div>
       <div class="userMenu--1KrdV usermenu">
         <div class="menu--3BT0y login--2ioZ4">
-          <button type="button" class="button--283Si big--2EVgB">
+          <button type="button" class="button--283Si big--2EVgB" (click)="toggleUserNavigation()">
             <div class="avatarWrapper--2PcM4"><span class="avatar--3DSui small--3ajsf"><span><img
               src="./assets/static/person_image_1032955.png" alt="_marc"><noscript><img
               src="//static.digitecgalaxus.ch/Files/7/2/7/7/8/0/2/person_image_1032955.png?fit=inside%7C30:30&output-format=png"
               alt="_marc"/></noscript></span></span>
-              <div class="username--2Q-xu hiddenSmDown--3Ouqx">__marc</div>
+              <div class="username--2Q-xu hiddenSmDown--3Ouqx">_marc</div>
 
             </div>
           </button>
         </div>
         <div class="menu--3BT0y compare--1ofKq">
-          <button type="button" aria-label="Produktvergleich" class="button--283Si big--2EVgB iconPadding--3OnWq">
+          <button type="button" aria-label="Produktvergleich" class="button--283Si big--2EVgB iconPadding--3OnWq" (click)="toggleComparisonList()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" class="digicon--e1_A0">
               <path
                 d="M6 2v5H1V2h5m1-1H0v7h7V1zm8 1v5h-5V2h5m1-1H9v7h7V1zM7 11H0v1h7v-1m0 2H0v1h7v-1m0 2H0v1h7v-1m9-4H9v1h7v-1m0 2H9v1h7v-1m0 2H9v1h7v-1"></path>
@@ -174,7 +174,7 @@
             <span class="badge--1TQkq badgeEmpty--2e-km">0</span></button>
         </div>
         <div class="menu--3BT0y menuBorder--1NoNC">
-          <button type="button" aria-label="Shoplists" class="button--283Si big--2EVgB iconPadding--3OnWq">
+          <button type="button" aria-label="Shoplists" class="button--283Si big--2EVgB iconPadding--3OnWq" (click)="toggleWishList()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" class="digicon--e1_A0">
               <path
                 d="M9.629-.002l6.364 6.364-.707.707L8.922.705zM1.86 7.778l6.364 6.364-.707.707-6.364-6.364zm5.652-5.657l2.121 2.122-.707.707-2.121-2.122zm4.24 4.237l2.121 2.12-.707.708-2.121-2.121z"></path>
@@ -188,7 +188,7 @@
             <span class="badge--1TQkq badgeNotEmpty--1EEXx">3</span></button>
         </div>
         <div class="menu--3BT0y menuBorder--1NoNC cart">
-          <button type="button" aria-label="Warenkorb" class="button--283Si big--2EVgB iconPadding--3OnWq" (click)="showBasket()">
+          <button type="button" aria-label="Warenkorb" class="button--283Si big--2EVgB iconPadding--3OnWq" (click)="toggleBasket()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" class="digicon--e1_A0">
               <circle cx="12.5" cy="13.5" r="1.5"></circle>
               <circle cx="3.5" cy="13.5" r="1.5"></circle>

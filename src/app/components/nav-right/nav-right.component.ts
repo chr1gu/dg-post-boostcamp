@@ -27,6 +27,22 @@ export class NavRightComponent implements OnInit, OnDestroy {
     this.navigationSubscription.unsubscribe();
   }
 
+  shouldShowBasket(state: NavigationState) {
+    return state === NavigationState.Basket;
+  }
+
+  shouldShowUserNavigation(state: NavigationState) {
+    return state === NavigationState.UserNavigation;
+  }
+
+  shouldShowWishList(state: NavigationState) {
+    return state === NavigationState.WishList;
+  }
+
+  shouldShowComparisonList(state: NavigationState) {
+    return state === NavigationState.ComparisonList;
+  }
+
   closeNavigation() {
     this.navigationService.change(NavigationState.Closed);
   }

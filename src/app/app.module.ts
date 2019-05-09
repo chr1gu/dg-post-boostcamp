@@ -8,6 +8,7 @@ import { ProductPageComponent } from './components/product-page/product-page.com
 import { NavLeftComponent } from './components/nav-left/nav-left.component';
 import { NavRightComponent } from './components/nav-right/nav-right.component';
 import { NotfoundPageComponent } from './components/notfound-page/notfound-page.component';
+import {NavigationService} from './services/navigation.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { NotfoundPageComponent } from './components/notfound-page/notfound-page.
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [NavigationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

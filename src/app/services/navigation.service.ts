@@ -3,17 +3,16 @@ import {BehaviorSubject, Observable, Subject} from 'rxjs';
 
 export enum NavigationState {
   Closed,
+  UserNavigation,
   ComparisonList,
-  WatchList,
+  WishList,
   Basket
 }
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class NavigationService {
 
-  private state: Subject<NavigationState> = new BehaviorSubject(NavigationState.Closed);
+  private state: BehaviorSubject<NavigationState> = new BehaviorSubject(NavigationState.Closed);
 
   constructor() { }
 
@@ -23,5 +22,9 @@ export class NavigationService {
 
   change(state: NavigationState) {
     this.state.next(state);
+  }
+
+  current(): NavigationState {
+    return this.state.getValue();
   }
 }
