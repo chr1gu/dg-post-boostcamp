@@ -9,6 +9,7 @@ import { NavLeftComponent } from './components/nav-left/nav-left.component';
 import { NavRightComponent } from './components/nav-right/nav-right.component';
 import { NotfoundPageComponent } from './components/notfound-page/notfound-page.component';
 import {NavigationService} from './services/navigation.service';
+import {CheckoutPageComponent} from './components/checkout-page/checkout-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {NavigationService} from './services/navigation.service';
     ProductPageComponent,
     NavLeftComponent,
     NavRightComponent,
-    NotfoundPageComponent
+    NotfoundPageComponent,
+    CheckoutPageComponent
   ],
   imports: [
     BrowserModule,
